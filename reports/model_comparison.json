@@ -1,0 +1,55 @@
+[
+  {
+    "model": "Baseline (majority class)",
+    "best_params": {},
+    "cv_f1_macro": null,
+    "validation_f1_macro": 0.20705128205128207,
+    "test_accuracy": 0.44972067039106145,
+    "test_f1_macro": 0.20680796403339755
+  },
+  {
+    "model": "Multinomial Naive Bayes",
+    "best_params": {
+      "clf__alpha": 0.1,
+      "tfidf__min_df": 1,
+      "tfidf__ngram_range": [
+        1,
+        1
+      ]
+    },
+    "cv_f1_macro": 0.49605360806073506,
+    "validation_f1_macro": 0.5304965111860784,
+    "test_accuracy": 0.5405027932960894,
+    "test_f1_macro": 0.5125385171409723
+  },
+  {
+    "model": "Logistic Regression",
+    "best_params": {
+      "clf__C": 0.1,
+      "tfidf__min_df": 1,
+      "tfidf__ngram_range": [
+        1,
+        1
+      ]
+    },
+    "cv_f1_macro": 0.4793246427375986,
+    "validation_f1_macro": 0.4991773319302533,
+    "test_accuracy": 0.5041899441340782,
+    "test_f1_macro": 0.4737444935508626
+  },
+  {
+    "model": "Linear SVM",
+    "best_params": {
+      "clf__C": 0.05,
+      "tfidf__min_df": 1,
+      "tfidf__ngram_range": [
+        1,
+        1
+      ]
+    },
+    "cv_f1_macro": 0.4920052704814076,
+    "validation_f1_macro": 0.4983307962781453,
+    "test_accuracy": 0.5307262569832403,
+    "test_f1_macro": 0.5046756157867268
+  }
+]

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.local
+*.log
+.DS_Store
+# frontend/dist is intentionally kept so the app runs without Node.js

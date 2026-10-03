@@ -1,0 +1,2 @@
+# Used by hosting platforms that install from the backend folder; the single source of truth is ../requirements.txt
+-r ../requirements.txt

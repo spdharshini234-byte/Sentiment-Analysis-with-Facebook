@@ -1,0 +1,1 @@
+Save screenshots of each page here (Overview, Sentiment Pulse, Trend Monitor, Comment Analyzer, Batch Analyzer, Customer Voice, Keyword Intelligence, Model Performance, Project Methodology) for your POP presentation.

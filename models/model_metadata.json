@@ -1,0 +1,72 @@
+{
+  "model_name": "Multinomial Naive Bayes",
+  "best_params": {
+    "clf__alpha": 0.1,
+    "tfidf__min_df": 1,
+    "tfidf__ngram_range": [
+      1,
+      1
+    ]
+  },
+  "selection_metric": "validation macro-F1",
+  "trained_at_utc": "2026-10-03T10:56:48+00:00",
+  "random_state": 42,
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "input": "raw comment text (cleaning is the first step inside the saved pipeline)",
+  "library_versions": {
+    "python": "3.12.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4"
+  },
+  "dataset": {
+    "file": "Facebook_data_txt.csv",
+    "rows_used": 5000,
+    "split": {
+      "strategy": "StratifiedGroupKFold (groups = identical cleaned text), 70/15/15",
+      "random_state": 42,
+      "leakage_check": "passed (no text group appears in two splits)",
+      "train": {
+        "rows": 3567,
+        "unique_text_groups": 962,
+        "class_distribution": {
+          "negative": 596,
+          "neutral": 1363,
+          "positive": 1608
+        }
+      },
+      "validation": {
+        "rows": 717,
+        "unique_text_groups": 188,
+        "class_distribution": {
+          "negative": 119,
+          "neutral": 275,
+          "positive": 323
+        }
+      },
+      "test": {
+        "rows": 716,
+        "unique_text_groups": 195,
+        "class_distribution": {
+          "negative": 119,
+          "neutral": 275,
+          "positive": 322
+        }
+      }
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.5405027932960894,
+    "precision_macro": 0.5375662171805807,
+    "recall_macro": 0.5073174566269195,
+    "f1_macro": 0.5125385171409723,
+    "precision_weighted": 0.5360191619333157,
+    "recall_weighted": 0.5405027932960894,
+    "f1_weighted": 0.5279837361560822
+  },
+  "has_predict_proba": true
+}
